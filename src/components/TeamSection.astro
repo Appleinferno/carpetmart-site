@@ -1,0 +1,51 @@
+---
+import { TEAM } from '../lib/site';
+
+interface Props {
+  heading?: string;
+  intro?: string;
+  showBio?: boolean;
+  cta?: boolean;
+}
+const {
+  heading = 'Meet the team',
+  intro = 'When you call or walk in, these are the people you\'ll work with — the same faces from your first quote through installation day.',
+  showBio = false,
+  cta = false,
+} = Astro.props;
+---
+
+<section class="container-page py-16">
+  <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+    <div class="max-w-2xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-700">The people</p>
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">{heading}</h2>
+      <p class="prose-body mt-4">{intro}</p>
+    </div>
+    {cta && (
+      <a href="/meet-the-team" class="shrink-0 text-sm font-semibold text-clay-700 hover:text-clay-800">
+        Meet the whole team &rarr;
+      </a>
+    )}
+  </div>
+
+  <ul class="mt-10 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
+    {TEAM.map((m) => (
+      <li class="group">
+        <div class="relative overflow-hidden rounded-2xl border border-stone-200 bg-stone-900">
+          <img
+            src={m.image}
+            alt={m.imageAlt}
+            width="600"
+            height="750"
+            loading="lazy"
+            class="aspect-[4/5] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+        </div>
+        <h3 class="mt-3 font-display text-lg font-bold text-stone-900">{m.name}</h3>
+        <p class="text-sm font-medium text-clay-700">{m.role}</p>
+        {showBio && <p class="mt-2 text-sm leading-relaxed text-stone-600">{m.bio}</p>}
+      </li>
+    ))}
+  </ul>
+</section>

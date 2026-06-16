@@ -1,0 +1,208 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CtaBand from '../components/CtaBand.astro';
+import FAQ from '../components/FAQ.tsx';
+import { SITE, YEARS_IN_BUSINESS, CABINET_ROOMS, CABINET_TIERS, CABINET_STYLES } from '../lib/site';
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from '../lib/schema';
+
+const title = 'Kitchen & Bath Cabinets in Murphy, NC | Carpet Mart';
+const description =
+  'Carpet Mart now offers cabinets in Murphy, NC — kitchen cabinets, bathroom vanities and more in stock, semi-custom and custom lines. Designed, measured and professionally installed. Call (828) 837-7491.';
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Cabinets', path: '/cabinets' },
+];
+
+const process = [
+  { step: '01', title: 'Design & select', body: 'We help you plan the layout and choose the line, door style and finish that fit your space, your floors and your budget.' },
+  { step: '02', title: 'In-home measure', body: 'We measure precisely so every cabinet, filler and panel fits — and your quote is an all-in number with no surprises.' },
+  { step: '03', title: 'Order & schedule', body: 'We place and track the order and coordinate a delivery and install date that works for you.' },
+  { step: '04', title: 'Professional install', body: 'Our crews set, level and secure everything and finish the details, then clean up and haul away the old cabinets.' },
+];
+
+const faqs = [
+  {
+    question: 'Does Carpet Mart sell cabinets now?',
+    answer: `Yes. Along with our flooring, we offer kitchen cabinets, bathroom vanities and more in Murphy, NC — in stock, semi-custom and custom lines. We handle the whole project, from design and measuring to professional installation.`,
+  },
+  {
+    question: 'Do you install the cabinets you sell?',
+    answer:
+      'We do. Our own crews handle the installation — setting, leveling and securing your cabinets, fitting fillers and panels, and removing the old cabinets. It\'s the same full-service approach we bring to flooring.',
+  },
+  {
+    question: 'What\'s the difference between stock, semi-custom and custom cabinets?',
+    answer:
+      'Stock cabinets come in set sizes and finishes for the best price and fastest turnaround. Semi-custom offers many more door styles, finishes and modifications. Custom cabinets are built to your exact dimensions for unusual layouts or a one-of-a-kind look. We\'ll help you decide which fits your project.',
+  },
+  {
+    question: 'Can you match cabinets to my new floors?',
+    answer:
+      'Absolutely — that\'s one of the advantages of doing both with us. We\'ll coordinate your cabinet finish with your flooring and keep the whole look working together, all from one local company.',
+  },
+  {
+    question: 'Do you do bathroom vanities as well as kitchens?',
+    answer:
+      'Yes. We do kitchen cabinets, bathroom vanities, laundry and mudroom storage, and built-ins. Whether it\'s a single vanity or a full kitchen, we can help.',
+  },
+];
+
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Cabinet sales & installation',
+    serviceType: 'Kitchen & bathroom cabinets',
+    description,
+    provider: { '@id': `${SITE.url}/#business` },
+    areaServed: { '@type': 'AdministrativeArea', name: 'Far Western NC, North GA & Southeast TN' },
+    url: `${SITE.url}/cabinets`,
+  },
+  localBusinessSchema,
+  breadcrumbSchema(crumbs),
+  faqSchema(faqs),
+];
+---
+
+<BaseLayout title={title} description={description} structuredData={structuredData}>
+  <Breadcrumbs items={crumbs} />
+
+  <!-- HERO -->
+  <section class="container-page grid items-center gap-10 py-10 lg:grid-cols-[1.05fr_1fr] lg:gap-14 lg:py-14">
+    <div>
+      <span class="inline-flex items-center gap-2 rounded-full border border-clay-200 bg-clay-50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-clay-700">
+        <span class="h-1.5 w-1.5 rounded-full bg-clay-600"></span>
+        New at Carpet Mart
+      </span>
+      <h1 class="mt-5 text-4xl font-extrabold leading-[1.07] tracking-tight text-stone-900 sm:text-5xl">
+        Cabinets, measured and installed to fit your home
+      </h1>
+      <p class="mt-5 max-w-xl text-lg leading-relaxed text-stone-600">
+        We're known for floors — and now we bring the same full-service approach to cabinets.
+        Kitchen cabinets, bathroom vanities and more, designed with you, measured in your home, and
+        professionally installed by our own crews. One local company for the whole project.
+      </p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a href="/contact" class="inline-flex items-center justify-center rounded-xl bg-clay-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-clay-700 active:scale-[0.98]">
+          Get a free quote
+        </a>
+        <a href={`tel:${SITE.phoneHref}`} class="inline-flex items-center justify-center gap-2 rounded-xl border border-stone-300 bg-white px-6 py-3.5 text-base font-semibold text-stone-800 transition-all hover:border-stone-400 active:scale-[0.98]">
+          <span class="font-mono">{SITE.phone}</span>
+        </a>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded-3xl border border-stone-200 shadow-xl shadow-stone-900/5">
+      <img src="/images/cabinets/hero.jpg" alt="Kitchen and bathroom cabinets from Carpet Mart in Murphy, NC" width="1000" height="800" fetchpriority="high" class="aspect-[5/4] w-full object-cover" />
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="container-page py-8">
+    <div class="max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-700">Why buy cabinets here</p>
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-stone-900">The same service that built our name on floors</h2>
+      <p class="prose-body mt-4">
+        For over {YEARS_IN_BUSINESS} years, folks around Murphy have trusted us to handle their
+        flooring start to finish. Cabinets are a natural next step — and doing both under one roof
+        means your finishes work together and one local team is accountable for the whole job. No
+        juggling a cabinet shop, a separate installer and your flooring.
+      </p>
+    </div>
+  </section>
+
+  <!-- ROOMS -->
+  <section class="container-page py-10">
+    <h2 class="text-2xl font-bold tracking-tight text-stone-900">What we cabinet</h2>
+    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {CABINET_ROOMS.map((r) => (
+        <div class="overflow-hidden rounded-2xl border border-stone-200 bg-white">
+          {r.image && (
+            <img src={r.image} alt={r.imageAlt} width="800" height="600" loading="lazy" class="aspect-[4/3] w-full object-cover" />
+          )}
+          <div class="p-6">
+            <h3 class="font-display text-lg font-bold text-stone-900">{r.name}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">{r.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- TIERS -->
+  <section class="border-y border-stone-200 bg-white">
+    <div class="container-page py-14">
+      <div class="max-w-2xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-700">Lines we carry</p>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-stone-900">Stock, semi-custom & custom</h2>
+        <p class="prose-body mt-4">From budget-friendly stock to fully custom, we'll match the line to your layout, timeline and budget.</p>
+      </div>
+      <div class="mt-8 grid gap-4 md:grid-cols-3">
+        {CABINET_TIERS.map((t) => (
+          <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6">
+            <h3 class="font-display text-xl font-bold text-stone-900">{t.name}</h3>
+            <p class="mt-2 text-[1.0625rem] leading-relaxed text-stone-600">{t.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- STYLES -->
+  <section class="container-page py-14">
+    <div class="max-w-2xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-700">Door styles & finishes</p>
+      <h2 class="mt-2 text-3xl font-bold tracking-tight text-stone-900">A look for every kitchen</h2>
+    </div>
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {CABINET_STYLES.map((s) => (
+        <div class="rounded-2xl border border-stone-200 bg-white p-6">
+          <h3 class="font-display text-lg font-bold text-stone-900">{s.name}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone-600">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="border-y border-stone-200 bg-white">
+    <div class="container-page py-14">
+      <h2 class="text-3xl font-bold tracking-tight text-stone-900">How a cabinet project works</h2>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {process.map((p) => (
+          <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6">
+            <span class="font-mono text-sm font-semibold text-clay-600">{p.step}</span>
+            <h3 class="mt-2 font-display text-lg font-bold text-stone-900">{p.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIRS WITH FLOORS -->
+  <section class="container-page py-14">
+    <div class="rounded-3xl border border-clay-200 bg-clay-50 p-8 sm:p-10">
+      <h2 class="font-display text-2xl font-bold text-stone-900">Doing the floors too?</h2>
+      <p class="prose-body mt-3 max-w-3xl">
+        Cabinets and flooring are a natural pairing, and there's a real advantage to doing them
+        together — coordinated finishes and one team for the whole job. Explore our
+        <a href="/flooring" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">flooring options</a>
+        or <a href="/contact" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">ask us about a combined quote</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container-page py-8">
+    <h2 class="text-3xl font-bold tracking-tight text-stone-900">Cabinet questions, answered</h2>
+    <div class="mt-8 max-w-3xl">
+      <FAQ client:visible items={faqs} />
+    </div>
+  </section>
+
+  <div class="pt-10 pb-24">
+    <CtaBand heading="Let's design your new kitchen or bath" text="Tell us about your project and we'll help you plan cabinets that fit your space, your floors and your budget — designed, measured and installed by our own team." />
+  </div>
+</BaseLayout>

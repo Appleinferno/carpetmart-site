@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { SITE, TEAM, YEARS_IN_BUSINESS } from '../lib/site';
+import { localBusinessSchema, breadcrumbSchema } from '../lib/schema';
+
+const title = 'Meet the Team | Carpet Mart Flooring, Murphy NC';
+const description =
+  'Meet the family and crew behind Carpet Mart in Murphy, NC — the people who help you choose, measure and install your new floors, from first quote to the final board.';
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Meet the Team', path: '/meet-the-team' },
+];
+
+const structuredData = [
+  localBusinessSchema,
+  breadcrumbSchema(crumbs),
+  ...TEAM.map((m) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: m.name,
+    jobTitle: m.role,
+    image: `${SITE.url}${m.image}`,
+    worksFor: { '@id': `${SITE.url}/#business` },
+  })),
+];
+---
+
+<BaseLayout title={title} description={description} structuredData={structuredData}>
+  <Breadcrumbs items={crumbs} />
+
+  <!-- HERO -->
+  <section class="container-page py-10 lg:py-14">
+    <div class="max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-700">The people</p>
+      <h1 class="mt-3 text-4xl font-extrabold leading-[1.07] tracking-tight text-stone-900 sm:text-5xl">
+        The faces behind your floors
+      </h1>
+      <p class="mt-5 text-lg leading-relaxed text-stone-600">
+        Carpet Mart is a family business, and it shows in how we work. The same people who help you
+        choose a floor are the ones who measure it and see it installed. Here's who you'll be
+        working with — {YEARS_IN_BUSINESS}+ years of flooring know-how, right here in Murphy.
+      </p>
+    </div>
+  </section>
+
+  <!-- TEAM ROWS -->
+  <section class="container-page">
+    <div class="divide-y divide-stone-200 border-y border-stone-200">
+      {
+        TEAM.map((m, i) => (
+          <article class:list={['team-row py-10', i % 2 === 1 && 'is-reversed']}>
+            <div class="overflow-hidden rounded-2xl border border-stone-200 bg-stone-900">
+              <img
+                src={m.image}
+                alt={m.imageAlt}
+                width="600"
+                height="750"
+                loading={i < 2 ? 'eager' : 'lazy'}
+                class="aspect-[4/5] w-full object-cover"
+              />
+            </div>
+            <div>
+              <h2 class="font-display text-2xl font-bold text-stone-900 sm:text-3xl">{m.name}</h2>
+              <p class="mt-1 text-sm font-semibold uppercase tracking-wider text-clay-700">{m.role}</p>
+              <p class="prose-body mt-4 max-w-xl">{m.bio}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- VALUES STRIP -->
+  <section class="container-page py-14">
+    <div class="rounded-3xl border border-clay-200 bg-clay-50 p-8 sm:p-10">
+      <h2 class="font-display text-2xl font-bold text-stone-900">One team, the whole way through</h2>
+      <p class="prose-body mt-3 max-w-3xl">
+        Because we handle everything in-house — guidance, measuring and installation — there's no
+        handing you off to a stranger after the sale. You get one accountable team from your first
+        visit to the day you walk on your new floors. Want to put a name to a project?
+        <a href="/contact" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">Reach out for a free quote</a>
+        or call <a href={`tel:${SITE.phoneHref}`} class="font-mono font-medium text-clay-700">{SITE.phone}</a>.
+      </p>
+    </div>
+  </section>
+
+  <div class="pb-24">
+    <CtaBand heading="Come meet us in person" />
+  </div>
+</BaseLayout>

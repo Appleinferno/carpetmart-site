@@ -1,0 +1,115 @@
+---
+// NOTE: This is a general-purpose template covering cookies and data/GDPR
+// rights. Have it reviewed by an attorney and keep it accurate as you add
+// tools (e.g. analytics or advertising pixels).
+import LegalLayout from '../layouts/LegalLayout.astro';
+import { SITE, ADDRESS_LINE } from '../lib/site';
+---
+
+<LegalLayout
+  title="Cookie Policy & Privacy (GDPR) | Carpet Mart"
+  description="How Carpet Mart uses cookies and handles your personal data, including your rights under the GDPR and similar privacy laws."
+  heading="Cookie Policy & Privacy"
+  pageName="Cookie Policy"
+  path="/cookie-policy"
+  lastUpdated="June 16, 2026"
+>
+  <p>
+    This policy explains how {SITE.legalName} ("Carpet Mart," "we," "us" or "our") uses cookies and
+    handles personal information on <a href={SITE.url}>{SITE.url}</a> (the "Site"), and the rights you
+    have under the EU/UK General Data Protection Regulation (GDPR) and similar laws.
+  </p>
+
+  <h2>Information we collect</h2>
+  <ul>
+    <li>
+      <strong>Information you provide.</strong> When you submit our quote/contact form, we collect the
+      details you enter — typically your name, email, phone number, town, the products you're
+      interested in, and your message.
+    </li>
+    <li>
+      <strong>Information collected automatically.</strong> Like most websites, our hosting provider
+      may log basic technical data such as your IP address, browser type and the pages you visit, for
+      security and to keep the Site running.
+    </li>
+  </ul>
+
+  <h2>Cookies &amp; similar technologies</h2>
+  <p>Cookies are small files stored on your device. We aim to keep our use of them minimal:</p>
+  <ul>
+    <li>
+      <strong>Essential cookies.</strong> Used only where necessary for the Site to function — for
+      example, a secure session cookie for staff signing in to our private admin area.
+    </li>
+    <li>
+      <strong>Third-party embeds.</strong> Pages that display a map use an embedded mapping service
+      (Google Maps), which may set its own cookies. That data is handled under the provider's own
+      privacy policy.
+    </li>
+  </ul>
+  <p>
+    We do not currently use advertising or cross-site tracking cookies. If we add analytics or
+    marketing tools in the future, we will update this policy.
+  </p>
+
+  <h2>How we use your information</h2>
+  <ul>
+    <li>To respond to your quote requests and questions and to provide our products and services.</li>
+    <li>To schedule measures, deliveries and installations.</li>
+    <li>To operate, secure and improve the Site.</li>
+    <li>To comply with our legal obligations.</li>
+  </ul>
+
+  <h2>Legal bases for processing (GDPR)</h2>
+  <p>Where the GDPR applies, we rely on the following legal bases:</p>
+  <ul>
+    <li><strong>Consent</strong> — when you submit a form to ask us to contact you.</li>
+    <li><strong>Legitimate interests</strong> — to run our business, respond to inquiries and keep the Site secure.</li>
+    <li><strong>Contract</strong> — to take steps at your request before, and in connection with, a purchase or installation.</li>
+    <li><strong>Legal obligation</strong> — where we must retain certain records.</li>
+  </ul>
+
+  <h2>How your information is shared</h2>
+  <p>
+    We do not sell your personal information. We share it only with trusted service providers who help
+    us operate (for example, website hosting and the database that stores form submissions), and when
+    required by law. These providers process data on our behalf under appropriate safeguards.
+  </p>
+
+  <h2>Data retention</h2>
+  <p>
+    We keep quote requests and related correspondence only as long as needed to respond to you, fulfil
+    your project, and meet legal or record-keeping requirements, after which we delete or anonymize it.
+  </p>
+
+  <h2>Your privacy rights</h2>
+  <p>
+    Depending on where you live, you may have the right to access, correct, delete or receive a copy of
+    your personal information; to object to or restrict certain processing; and to withdraw consent. To
+    exercise any of these rights, contact us using the details below and we will respond as required by
+    applicable law. You also have the right to lodge a complaint with your local data-protection
+    authority.
+  </p>
+
+  <h2>Managing cookies</h2>
+  <p>
+    You can control or delete cookies through your browser settings, and set your browser to warn you
+    before accepting them. Blocking essential cookies may affect how parts of the Site work.
+  </p>
+
+  <h2>Children's privacy</h2>
+  <p>The Site is intended for adults and is not directed to children, and we do not knowingly collect data from children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    We may update this policy from time to time. The "Last updated" date above reflects the most recent
+    revision.
+  </p>
+
+  <h2>Contact us</h2>
+  <p>
+    To ask about this policy or exercise your privacy rights, contact Carpet Mart at
+    <a href={`tel:${SITE.phoneHref}`}>{SITE.phone}</a>, <a href={`mailto:${SITE.email}`}>{SITE.email}</a>,
+    or {ADDRESS_LINE}.
+  </p>
+</LegalLayout>

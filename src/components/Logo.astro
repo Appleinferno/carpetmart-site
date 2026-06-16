@@ -1,0 +1,18 @@
+---
+interface Props {
+  class?: string;
+  tone?: 'dark' | 'light';
+}
+const { class: className = '', tone = 'dark' } = Astro.props;
+const main = tone === 'light' ? 'text-white' : 'text-stone-900';
+const sub = tone === 'light' ? 'text-clay-200' : 'text-clay-700';
+---
+
+<span class={`inline-flex flex-col leading-none ${className}`}>
+  <span class:list={[main, 'font-display text-xl font-extrabold uppercase tracking-tight sm:text-2xl']}>
+    Carpet<span class="text-clay-600">Mart</span>
+  </span>
+  <span class:list={[sub, 'mt-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.22em]']}>
+    Murphy, NC
+  </span>
+</span>

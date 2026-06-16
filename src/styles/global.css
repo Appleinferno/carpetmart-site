@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/*
+  Carpet Mart design system — Tailwind v4 (CSS-first config).
+  Base: warm "stone" neutrals. Accent: a single grounded clay/terracotta
+  (saturation < 80%) that pairs with carpet, wood and tile imagery.
+*/
+@theme {
+  --font-sans: "Geist Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit Variable", "Geist Sans", ui-sans-serif, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+
+  /* Accent — clay / terracotta */
+  --color-clay-50: #fdf5f2;
+  --color-clay-100: #f9e4da;
+  --color-clay-200: #f0c4b1;
+  --color-clay-300: #e49d80;
+  --color-clay-400: #d6744f;
+  --color-clay-500: #c4542e;
+  --color-clay-600: #a8431f;
+  --color-clay-700: #8a3619;
+  --color-clay-800: #6f2d18;
+  --color-clay-900: #5b2817;
+  --color-clay-950: #31120b;
+
+  /* Deep pine — secondary, used sparingly for trust/eco accents */
+  --color-pine-700: #2f4a3a;
+  --color-pine-800: #233a2d;
+  --color-pine-900: #1b2d23;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-stone-50 text-stone-900 antialiased;
+    font-family: var(--font-sans);
+    font-feature-settings: "cv01", "cv03", "ss03";
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    @apply tracking-tight text-stone-900;
+  }
+
+  ::selection {
+    @apply bg-clay-600 text-white;
+  }
+
+  :where(a, button, input, textarea, select):focus-visible {
+    @apply outline-none ring-2 ring-clay-600/40 ring-offset-2 ring-offset-stone-50;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .prose-body {
+    @apply text-[1.0625rem] leading-relaxed text-stone-600;
+  }
+
+  /* Meet-the-team alternating rows — explicit CSS so the two-column
+     layout never depends on arbitrary-value utility generation. */
+  .team-row {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  }
+  @media (min-width: 1024px) {
+    .team-row {
+      grid-template-columns: 300px minmax(0, 1fr);
+      gap: 3.5rem;
+    }
+    .team-row.is-reversed {
+      grid-template-columns: minmax(0, 1fr) 300px;
+    }
+    .team-row.is-reversed > :first-child {
+      order: 2;
+    }
+  }
+}

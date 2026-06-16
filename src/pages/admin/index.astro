@@ -1,0 +1,23 @@
+---
+export const prerender = false;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AdminDashboard from '../../components/admin/AdminDashboard.tsx';
+---
+
+<BaseLayout title="Quote Requests | Carpet Mart Admin" description="Admin dashboard." noindex={true}>
+  <section class="container-page py-10">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <h1 class="font-display text-3xl font-bold text-stone-900">Quote requests</h1>
+        <p class="mt-1 text-sm text-stone-500">Submissions from the website contact form.</p>
+      </div>
+      <a href="/admin/logout" class="rounded-lg border border-stone-300 px-4 py-2 text-sm font-medium text-stone-700 transition-colors hover:bg-white">
+        Log out
+      </a>
+    </div>
+    <div class="mt-8">
+      <AdminDashboard client:load />
+    </div>
+  </section>
+</BaseLayout>

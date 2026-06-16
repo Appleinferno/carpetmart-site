@@ -1,0 +1,56 @@
+---
+// NOTE: General-purpose template. Confirm your actual trademark status
+// (registered vs. common-law) with an attorney before claiming ® vs ™.
+import LegalLayout from '../layouts/LegalLayout.astro';
+import { SITE, ADDRESS_LINE } from '../lib/site';
+---
+
+<LegalLayout
+  title="Trademark Notice | Carpet Mart"
+  description="Trademark information for the Carpet Mart name and logo, and acknowledgment of third-party trademarks."
+  heading="Trademark Notice"
+  pageName="Trademark"
+  path="/trademark"
+  lastUpdated="June 16, 2026"
+>
+  <p>
+    This page describes the trademarks used on <a href={SITE.url}>{SITE.url}</a> (the "Site"),
+    operated by {SITE.legalName} ("Carpet Mart").
+  </p>
+
+  <h2>Our marks</h2>
+  <p>
+    The name <strong>Carpet Mart</strong>, the Carpet Mart logo, and any related names, logos,
+    taglines and designs used on this Site are trademarks of {SITE.legalName} ("Carpet Mart Marks").
+    They identify our flooring and cabinet products and services in and around Murphy, North Carolina.
+    All rights in the Carpet Mart Marks are reserved.
+  </p>
+
+  <h2>Use of the Carpet Mart Marks</h2>
+  <p>
+    You may not use the Carpet Mart Marks without our prior written permission. In particular, you may
+    not use them:
+  </p>
+  <ul>
+    <li>in a way that is likely to cause confusion about whether Carpet Mart is the source of, or is affiliated with or endorses, any product, service or website;</li>
+    <li>as part of your own business name, domain name, logo or product name;</li>
+    <li>in a manner that disparages Carpet Mart or its products and services; or</li>
+    <li>in any modified form, or combined with other marks, names or graphics.</li>
+  </ul>
+
+  <h2>Third-party trademarks</h2>
+  <p>
+    The Site may reference flooring and cabinet manufacturers, product lines, and other businesses and
+    places. All product names, brand names, logos and trademarks mentioned are the property of their
+    respective owners. Their use on this Site is for identification and descriptive purposes only and
+    does not imply any affiliation with, sponsorship by, or endorsement from those owners unless
+    expressly stated.
+  </p>
+
+  <h2>Reporting misuse</h2>
+  <p>
+    If you believe a trademark has been used improperly on this Site, or you wish to request permission
+    to use a Carpet Mart Mark, please contact us at <a href={`tel:${SITE.phoneHref}`}>{SITE.phone}</a>,
+    <a href={`mailto:${SITE.email}`}>{SITE.email}</a>, or {ADDRESS_LINE}.
+  </p>
+</LegalLayout>

@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { SITE, YEARS_IN_BUSINESS, ADDRESS_LINE } from '../lib/site';
+import { localBusinessSchema, breadcrumbSchema } from '../lib/schema';
+
+const title = `About Carpet Mart | Family-Owned Flooring in Murphy Since ${SITE.foundedYear}`;
+const description = `Carpet Mart has been the family-owned flooring store in Murphy, NC since 1973 — ${YEARS_IN_BUSINESS}+ years of honest advice, low prices and quality installation across Western North Carolina.`;
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+];
+
+const values = [
+  { title: 'Honest advice', body: 'We help you choose the floor that\'s right for your rooms and how you live — not the one with the biggest markup. Straight answers from people who do this every day.' },
+  { title: 'One company, start to finish', body: 'Guidance, measuring, ordering and installation all run through us. You\'re never left coordinating between a store and a separate installer.' },
+  { title: 'Local accountability', body: 'We live here. If something isn\'t right, you know exactly where to find us — on US-64, same as we\'ve been for 50 years.' },
+  { title: 'Quality installation', body: 'Our experienced crews treat your home with respect and get the details right the first time — on homes within 80 miles of Murphy.' },
+];
+
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: title,
+    description,
+    url: `${SITE.url}/about`,
+  },
+  localBusinessSchema,
+  breadcrumbSchema(crumbs),
+];
+---
+
+<BaseLayout title={title} description={description} structuredData={structuredData}>
+  <Breadcrumbs items={crumbs} />
+
+  <!-- HERO -->
+  <section class="container-page grid items-center gap-10 py-10 lg:grid-cols-[1.1fr_1fr] lg:gap-16 lg:py-14">
+    <div>
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-700">Since {SITE.foundedYear}</p>
+      <h1 class="mt-3 text-4xl font-extrabold leading-[1.07] tracking-tight text-stone-900 sm:text-5xl">
+        {YEARS_IN_BUSINESS} years on the same road in Murphy
+      </h1>
+      <p class="mt-5 max-w-xl text-lg leading-relaxed text-stone-600">
+        Carpet Mart isn't a chain. We're a family-owned flooring store that has served the same
+        mountain community since 1973 — long enough that we're now flooring homes for the children
+        and grandchildren of our first customers.
+      </p>
+    </div>
+    <div class="overflow-hidden rounded-3xl border border-stone-200 shadow-xl shadow-stone-900/5">
+      <img src="/images/storefront-wide.avif" alt="Wide view of the Carpet Mart flooring store at 1395 US Hwy 64 W in Murphy, NC" width="1000" height="750" fetchpriority="high" class="aspect-[4/3] w-full object-cover" />
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="container-page py-10">
+    <div class="grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
+      <div class="prose-body space-y-5">
+        <h2 class="font-display text-3xl font-bold text-stone-900">Our story</h2>
+        <p>
+          When Carpet Mart opened in 1973, Murphy was — and still is — a small mountain town where
+          your reputation is everything. We built ours one floor at a time: measure honestly, quote
+          fairly, install it right, and stand behind it. Five decades later, that's still exactly
+          how we work.
+        </p>
+        <p>
+          Over the years we've grown our selection well beyond carpet. Today you'll find hardwood,
+          waterproof <a href="/flooring/vinyl-plank" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">vinyl plank</a>,
+          <a href="/flooring/vinyl-flooring" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">vinyl flooring</a>
+          and laminate alongside our deep <a href="/flooring/carpet" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">carpet</a> inventory —
+          and we've added <a href="/cabinets" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">kitchen and bath cabinets</a> to round out a whole-home project.
+          What hasn't changed is the in-person service: you walk in, you talk to someone who knows
+          flooring, and we see the job all the way through to a finished result in your home.
+        </p>
+        <p>
+          Being local matters in this business. We know what mountain weather, wood stoves, muddy
+          boots and weekend-rental turnover do to a floor — because we've floored thousands of homes
+          and cabins right here. That experience is the difference between a floor that looks good
+          for a season and one that still looks good in ten years.
+        </p>
+      </div>
+      <div class="grid gap-4">
+        <img src="/images/showroom-entrance.avif" alt="Inside the front door of the Carpet Mart showroom in Murphy" width="600" height="450" loading="lazy" class="aspect-[4/3] w-full rounded-2xl border border-stone-200 object-cover" />
+        <img src="/images/showroom-3.avif" alt="Flooring product displays inside Carpet Mart" width="600" height="450" loading="lazy" class="aspect-[4/3] w-full rounded-2xl border border-stone-200 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="border-y border-stone-200 bg-white">
+    <div class="container-page py-14">
+      <h2 class="max-w-2xl text-3xl font-bold tracking-tight text-stone-900">What you can count on</h2>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2">
+        {values.map((v) => (
+          <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6">
+            <h3 class="font-display text-lg font-bold text-stone-900">{v.title}</h3>
+            <p class="mt-2 text-[1.0625rem] leading-relaxed text-stone-600">{v.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="container-page py-14">
+    <div class="grid gap-8 rounded-3xl border border-stone-200 bg-white p-8 sm:p-10 lg:grid-cols-2 lg:items-center">
+      <div>
+        <h2 class="font-display text-2xl font-bold text-stone-900">Come see us</h2>
+        <p class="prose-body mt-3">
+          The best way to choose a floor is to see and feel it. Stop by the showroom — bring your
+          room measurements and we'll get you a real price the same day.
+        </p>
+        <dl class="mt-6 space-y-3 text-sm">
+          <div class="flex gap-3">
+            <dt class="w-20 shrink-0 font-semibold text-stone-500">Address</dt>
+            <dd class="text-stone-800">{ADDRESS_LINE}</dd>
+          </div>
+          <div class="flex gap-3">
+            <dt class="w-20 shrink-0 font-semibold text-stone-500">Phone</dt>
+            <dd><a href={`tel:${SITE.phoneHref}`} class="font-mono font-medium text-clay-700">{SITE.phone}</a></dd>
+          </div>
+          {SITE.hours.map((h) => (
+            <div class="flex gap-3">
+              <dt class="w-20 shrink-0 font-semibold text-stone-500">{h.days.split(' ')[0]}</dt>
+              <dd class="text-stone-800">{h.days} &middot; {h.time}</dd>
+            </div>
+          ))}
+        </dl>
+        <a href="/contact" class="mt-6 inline-flex rounded-xl bg-clay-600 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-clay-700">
+          Directions &amp; contact
+        </a>
+      </div>
+      <img src="/images/storefront-front.avif" alt="Front of the Carpet Mart store in Murphy, North Carolina" width="800" height="600" loading="lazy" class="aspect-[4/3] w-full rounded-2xl border border-stone-200 object-cover" />
+    </div>
+  </section>
+
+  <div class="pb-24">
+    <CtaBand heading="Stop in and meet the team" />
+  </div>
+</BaseLayout>

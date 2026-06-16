@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { FLOORING_CATEGORIES, SITE, YEARS_IN_BUSINESS } from '../../lib/site';
+import { FLOORING_DETAILS } from '../../lib/flooring-content';
+import { localBusinessSchema, breadcrumbSchema } from '../../lib/schema';
+
+const title = 'Flooring in Murphy, NC | Carpet, Vinyl Plank, Hardwood & More';
+const description =
+  'Explore every flooring type at Carpet Mart in Murphy, NC — carpet, waterproof vinyl plank, hardwood, seamless vinyl flooring and laminate. Sold and professionally installed since 1973.';
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Flooring', path: '/flooring' },
+];
+
+const structuredData = [localBusinessSchema, breadcrumbSchema(crumbs)];
+---
+
+<BaseLayout title={title} description={description} structuredData={structuredData}>
+  <Breadcrumbs items={crumbs} />
+
+  <section class="container-page py-10 lg:py-14">
+    <div class="max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-700">Our flooring</p>
+      <h1 class="mt-3 text-4xl font-extrabold leading-[1.07] tracking-tight text-stone-900 sm:text-5xl">
+        Every type of floor, under one roof in Murphy
+      </h1>
+      <p class="mt-5 text-lg leading-relaxed text-stone-600">
+        Carpet, waterproof vinyl plank, hardwood, vinyl flooring and laminate — all in stock, all
+        professionally installed, and all backed by {YEARS_IN_BUSINESS}+ years of local know-how.
+        Pick a floor below to learn what it's best for, or just <a href="/contact" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">come see them in person</a>.
+      </p>
+    </div>
+
+    <div class="mt-12 space-y-5">
+      {FLOORING_CATEGORIES.map((cat, i) => {
+        const detail = FLOORING_DETAILS[cat.slug];
+        return (
+          <a
+            href={`/flooring/${cat.slug}`}
+            class="group grid items-stretch overflow-hidden rounded-3xl border border-stone-200 bg-white transition-all hover:border-clay-300 hover:shadow-md md:grid-cols-[0.9fr_1.1fr]"
+          >
+            <div class:list={['relative min-h-[14rem] overflow-hidden bg-stone-900', i % 2 === 1 && 'md:order-2']}>
+              <img src={cat.image} alt={cat.imageAlt} width="800" height="600" loading="lazy" class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="flex flex-col justify-center p-7 sm:p-9">
+              <p class="text-xs font-semibold uppercase tracking-wider text-clay-700">{cat.short}</p>
+              <h2 class="mt-1.5 font-display text-2xl font-bold text-stone-900 sm:text-3xl">{cat.name}</h2>
+              <p class="mt-3 max-w-md text-[1.0625rem] leading-relaxed text-stone-600">{detail?.heroLead ?? cat.blurb}</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                {detail?.bestFor.slice(0, 4).map((b) => (
+                  <span class="rounded-full bg-stone-100 px-3 py-1 text-xs font-medium text-stone-600">{b}</span>
+                ))}
+              </div>
+              <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-clay-700">
+                Learn about {cat.name.toLowerCase()}
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0-6-6m6 6-6 6"/></svg>
+              </span>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+
+  <section class="container-page pb-6">
+    <div class="rounded-3xl border border-stone-200 bg-white p-8 sm:p-10">
+      <div class="grid gap-8 md:grid-cols-3">
+        <div>
+          <h3 class="font-display text-lg font-bold text-stone-900">Not sure what to choose?</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone-600">Tell us the room, the traffic and the budget — we'll narrow it down fast.</p>
+        </div>
+        <div>
+          <h3 class="font-display text-lg font-bold text-stone-900">Installed or material-only</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone-600">Use our local installers, or buy the material and do it yourself. Your call.</p>
+        </div>
+        <div>
+          <h3 class="font-display text-lg font-bold text-stone-900">Free in-store estimates</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone-600">Bring your measurements to our US-64 showroom and we'll give you a real price.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="pt-10 pb-24">
+    <CtaBand />
+  </div>
+</BaseLayout>
