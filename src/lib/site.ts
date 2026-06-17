@@ -187,27 +187,15 @@ export type TeamMember = {
 // Real team — the Cook family. Portrait photos are placeholders for now;
 // drop real ones (portrait orientation, ~600x750) into public/images/team/
 // using the same filenames. Bios are starter drafts — edit freely.
+// Order matters: Jason is listed first; the founders Bill & Barbara are kept
+// last (they show at the bottom when stacked, far right when in a row).
 export const TEAM: TeamMember[] = [
-  {
-    name: 'Bill Cook',
-    role: 'Founder',
-    image: '/images/team/bill-cook.jpg',
-    imageAlt: 'Bill Cook, founder of Carpet Mart in Murphy, NC',
-    bio: 'Bill founded Carpet Mart in 1973 and has spent five decades making sure customers get honest advice and a floor that lasts. He still knows just about every product on the floor.',
-  },
-  {
-    name: 'Barbara Cook',
-    role: 'Founder',
-    image: '/images/team/barbara-cook.jpg',
-    imageAlt: 'Barbara Cook, founder of Carpet Mart in Murphy, NC',
-    bio: 'Barbara co-founded Carpet Mart and has helped generations of local families choose the right floors for their homes. Her eye for color and detail shapes the showroom.',
-  },
   {
     name: 'Jason Cook',
     role: 'Store Lead',
     image: '/images/team/jason-cook.jpg',
     imageAlt: 'Jason Cook, store lead at Carpet Mart in Murphy, NC',
-    bio: 'Jason runs the showroom day to day, keeping orders, measures and installs on track so every project moves smoothly from first quote to finished floor.',
+    bio: 'Bill and Barbara\'s son, Jason runs Carpet Mart day to day. He keeps orders, measures and installs on track and knows the current product inside and out — if you have a question about a floor or a project, he\'s your guy.',
   },
   {
     name: 'Jeff Cook',
@@ -222,6 +210,20 @@ export const TEAM: TeamMember[] = [
     image: '/images/team/kevin-cook.jpg',
     imageAlt: 'Kevin Cook, sales at Carpet Mart in Murphy, NC',
     bio: 'Kevin walks customers through their options and coordinates the details, from picking a product to setting an install date.',
+  },
+  {
+    name: 'Bill Cook',
+    role: 'Founder',
+    image: '/images/team/bill-cook.jpg',
+    imageAlt: 'Bill Cook, founder of Carpet Mart in Murphy, NC',
+    bio: 'Bill founded Carpet Mart in 1973 and built its reputation over five decades. He has handed the day-to-day over to his son Jason, but he\'s still in every morning, keeping an eye on the business and lending a hand whenever something out of the ordinary comes up.',
+  },
+  {
+    name: 'Barbara Cook',
+    role: 'Founder',
+    image: '/images/team/barbara-cook.jpg',
+    imageAlt: 'Barbara Cook, founder of Carpet Mart in Murphy, NC',
+    bio: 'Barbara co-founded Carpet Mart alongside Bill in 1973. She has stepped back from running the store — that\'s Jason\'s job now — but you\'ll still find her in most days, helping with the bigger decisions and the occasional tricky situation.',
   },
 ];
 
