@@ -184,44 +184,44 @@ export type TeamMember = {
   bio: string;
 };
 
-// PLACEHOLDER staff — replace names, roles, bios and photos with real ones.
-// Drop real portraits (portrait orientation, ~600x750) into public/images/team/
-// using the same filenames to swap out the monogram placeholders.
+// Real team — the Cook family. Portrait photos are placeholders for now;
+// drop real ones (portrait orientation, ~600x750) into public/images/team/
+// using the same filenames. Bios are starter drafts — edit freely.
 export const TEAM: TeamMember[] = [
   {
-    name: 'Randy Holloway',
-    role: 'Owner',
-    image: '/images/team/owner.jpg',
-    imageAlt: 'Randy Holloway, owner of Carpet Mart in Murphy, NC',
-    bio: 'Randy grew up in the flooring business and has run Carpet Mart for decades. He still measures jobs himself and knows the quirks of just about every type of home in these mountains.',
+    name: 'Bill Cook',
+    role: 'Founder',
+    image: '/images/team/bill-cook.jpg',
+    imageAlt: 'Bill Cook, founder of Carpet Mart in Murphy, NC',
+    bio: 'Bill founded Carpet Mart in 1973 and has spent five decades making sure customers get honest advice and a floor that lasts. He still knows just about every product on the floor.',
   },
   {
-    name: 'Sandra Holloway',
-    role: 'Sales & Design Consultant',
-    image: '/images/team/sales.jpg',
-    imageAlt: 'Sandra Holloway, sales and design consultant at Carpet Mart',
-    bio: 'Sandra helps customers turn a vague idea into the right floor — matching colors, textures and durability to how each room actually gets lived in.',
+    name: 'Barbara Cook',
+    role: 'Founder',
+    image: '/images/team/barbara-cook.jpg',
+    imageAlt: 'Barbara Cook, founder of Carpet Mart in Murphy, NC',
+    bio: 'Barbara co-founded Carpet Mart and has helped generations of local families choose the right floors for their homes. Her eye for color and detail shapes the showroom.',
   },
   {
-    name: 'Mike Trantham',
-    role: 'Measure & Estimating',
-    image: '/images/team/estimator.jpg',
-    imageAlt: 'Mike Trantham, measure and estimating specialist at Carpet Mart',
-    bio: 'Mike handles in-home measures and quotes. His precise measurements are why our installs go smoothly and our estimates hold up with no surprises.',
+    name: 'Jason Cook',
+    role: 'Store Lead',
+    image: '/images/team/jason-cook.jpg',
+    imageAlt: 'Jason Cook, store lead at Carpet Mart in Murphy, NC',
+    bio: 'Jason runs the showroom day to day, keeping orders, measures and installs on track so every project moves smoothly from first quote to finished floor.',
   },
   {
-    name: 'Carlos Reyes',
-    role: 'Lead Installer',
-    image: '/images/team/installer.jpg',
-    imageAlt: 'Carlos Reyes, lead flooring installer at Carpet Mart',
-    bio: 'Carlos leads our installation crews. From subfloor prep to the last transition strip, he makes sure every floor is set right and your home is left clean.',
+    name: 'Jeff Cook',
+    role: 'Sales',
+    image: '/images/team/jeff-cook.jpg',
+    imageAlt: 'Jeff Cook, sales at Carpet Mart in Murphy, NC',
+    bio: 'Jeff helps customers find the right floor for their rooms, their budget and the way they live — no pressure, just straight answers.',
   },
   {
-    name: 'Brenda Postell',
-    role: 'Office Manager',
-    image: '/images/team/office.jpg',
-    imageAlt: 'Brenda Postell, office manager at Carpet Mart',
-    bio: 'Brenda keeps everything on schedule and is usually the friendly voice on the phone. She coordinates measures, orders and install dates so nothing slips.',
+    name: 'Kevin Cook',
+    role: 'Sales',
+    image: '/images/team/kevin-cook.jpg',
+    imageAlt: 'Kevin Cook, sales at Carpet Mart in Murphy, NC',
+    bio: 'Kevin walks customers through their options and coordinates the details, from picking a product to setting an install date.',
   },
 ];
 

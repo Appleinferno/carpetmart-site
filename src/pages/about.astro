@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CtaBand from '../components/CtaBand.astro';
+import TeamSection from '../components/TeamSection.astro';
 import { SITE, YEARS_IN_BUSINESS, ADDRESS_LINE } from '../lib/site';
 import { localBusinessSchema, breadcrumbSchema } from '../lib/schema';
 
@@ -102,6 +103,18 @@ const structuredData = [
       </div>
     </div>
   </section>
+
+  <!-- MEET THE TEAM -->
+  <TeamSection
+    heading="Meet the Cook family"
+    intro="Carpet Mart has been run by the same family since 1973. These are the people who'll help you — from your first quote through installation day."
+  />
+  <div class="container-page -mt-8 pb-4">
+    <a href="/meet-the-team" class="inline-flex items-center justify-center gap-2 rounded-xl bg-clay-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-clay-700 active:scale-[0.98]">
+      Visit the Meet the Team page
+      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0-6-6m6 6-6 6"/></svg>
+    </a>
+  </div>
 
   <!-- VISIT -->
   <section class="container-page py-14">
