@@ -52,6 +52,9 @@ Copy `.env.example` to `.env` and fill in:
 | `TURSO_DATABASE_URL` | Turso database URL |
 | `TURSO_AUTH_TOKEN` | Turso auth token |
 | `ADMIN_SECRET` | Password for the `/admin` login |
+| `RESEND_API_KEY` | *(optional)* Resend API key — enables an email per new lead. Blank = email off, form still saves to DB. |
+| `LEAD_NOTIFY_TO` | *(optional)* Inbox that receives lead emails (defaults to `SITE.email`). |
+| `LEAD_NOTIFY_FROM` | *(optional)* Verified Resend sender. `onboarding@resend.dev` works for testing. |
 
 Set the same three in your Vercel project's Environment Variables.
 

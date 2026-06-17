@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { db, isDbConfigured } from '../../lib/db';
 import { quoteRequests } from '../../lib/db-schema';
+import { sendLeadNotification } from '../../lib/email';
 
 export const prerender = false;
 
@@ -44,6 +45,13 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     await db.insert(quoteRequests).values({ name, email, phone, location, flooringType, message });
+
+    // Email notification — never let a mail failure break the saved lead.
+    try {
+      await sendLeadNotification({ name, email, phone, location, flooringType, message });
+    } catch (mailErr) {
+      console.error('[contact] lead saved but email notification failed:', mailErr);
+    }
 
     return json({ success: true, message: 'Thanks! We\'ll be in touch soon.' });
   } catch (err) {
