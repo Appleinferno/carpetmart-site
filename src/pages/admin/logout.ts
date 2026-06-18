@@ -4,5 +4,5 @@ export const prerender = false;
 
 export const GET: APIRoute = ({ cookies, redirect }) => {
   cookies.delete('admin_token', { path: '/' });
-  return redirect('/admin/login');
+  return redirect('/admin/login/');
 };

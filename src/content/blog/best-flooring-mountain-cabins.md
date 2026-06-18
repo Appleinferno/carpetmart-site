@@ -12,7 +12,7 @@ Flooring a mountain cabin is a different job than flooring a suburban house, and
 
 ## Start with waterproof
 
-For most cabins and nearly every rental, [vinyl plank](/flooring/vinyl-plank) is our first recommendation, and it's not close. Here's why it fits mountain life so well:
+For most cabins and nearly every rental, [vinyl plank](/flooring/vinyl-plank/) is our first recommendation, and it's not close. Here's why it fits mountain life so well:
 
 - **It's 100% waterproof.** Snow-melt off boots, a wet dog shaking by the door, a pipe that lets go while you're away — none of it ruins LVP.
 - **It handles humidity swings.** A cabin that bakes in summer and freezes in winter is hard on wood. Rigid-core LVP stays dimensionally stable when solid hardwood would gap or cup.
@@ -23,17 +23,17 @@ For a rental especially, the math is simple: LVP survives turnover that would de
 
 ## Where real wood still makes sense
 
-We love a genuine [hardwood](/flooring/hardwood) floor in the right cabin — usually a higher-end, full-time home or a lodge that stays climate-controlled year-round. If the building is heated and cooled consistently, **engineered hardwood** is the move: its stable plywood core tolerates our humidity far better than solid wood, and it delivers that warm, real-wood look buyers and guests love.
+We love a genuine [hardwood](/flooring/hardwood/) floor in the right cabin — usually a higher-end, full-time home or a lodge that stays climate-controlled year-round. If the building is heated and cooled consistently, **engineered hardwood** is the move: its stable plywood core tolerates our humidity far better than solid wood, and it delivers that warm, real-wood look buyers and guests love.
 
 What we steer people away from is solid hardwood in a cabin that gets left cold and empty for long stretches. Wood moves with moisture, and an unconditioned cabin is the worst-case scenario for gaps and cupping.
 
 ## Don't forget comfort underfoot
 
-Hard surfaces everywhere can make a cabin feel cold — literally and figuratively. We usually put [carpet](/flooring/carpet) in the bedrooms for warmth on those frosty mornings, and area rugs over the vinyl plank in the living area. For a rental, a tight, stain-resistant carpet in the bedrooms photographs well and feels welcoming without being hard to maintain.
+Hard surfaces everywhere can make a cabin feel cold — literally and figuratively. We usually put [carpet](/flooring/carpet/) in the bedrooms for warmth on those frosty mornings, and area rugs over the vinyl plank in the living area. For a rental, a tight, stain-resistant carpet in the bedrooms photographs well and feels welcoming without being hard to maintain.
 
 ## Vinyl flooring for the wettest rooms
 
-In bathrooms and laundry rooms, [vinyl flooring](/flooring/vinyl-flooring) is worth considering too. Because it installs in wide, seamless pieces, water has nowhere to go — it's about as worry-free as a wet-room floor gets, and it wipes clean in seconds between rental guests. It's softer and warmer underfoot than a hard tile, and it's one of the most economical options we carry.
+In bathrooms and laundry rooms, [vinyl flooring](/flooring/vinyl-flooring/) is worth considering too. Because it installs in wide, seamless pieces, water has nowhere to go — it's about as worry-free as a wet-room floor gets, and it wipes clean in seconds between rental guests. It's softer and warmer underfoot than a hard tile, and it's one of the most economical options we carry.
 
 ## Our cabin & rental playbook
 
@@ -43,7 +43,7 @@ When someone's flooring a cabin or rental from scratch, here's the combination w
 2. **Carpet in the bedrooms** — for warmth and a welcoming feel.
 3. **Vinyl flooring or vinyl plank in bathrooms and the mudroom** — whichever look and feel you prefer.
 
-It's durable, it's attractive in photos, and it's easy to maintain between guests or seasons. Still weighing soft versus hard surfaces room by room? Our guide to [carpet vs. vinyl plank](/flooring-guides/carpet-vs-luxury-vinyl-plank) breaks down where each one belongs.
+It's durable, it's attractive in photos, and it's easy to maintain between guests or seasons. Still weighing soft versus hard surfaces room by room? Our guide to [carpet vs. vinyl plank](/flooring-guides/carpet-vs-luxury-vinyl-plank/) breaks down where each one belongs.
 
 ## A few mountain-specific tips
 
@@ -54,4 +54,4 @@ It's durable, it's attractive in photos, and it's easy to maintain between guest
 
 ## Let's spec your cabin
 
-Every cabin is a little different, and the right floor depends on how — and how often — yours gets used. To get a sense of budget first, see our [flooring cost guide](/flooring-guides/flooring-cost-guide). Then bring your square footage and a few photos to our showroom on US-64 in Murphy, or [request a free quote](/contact). We'll put together a floor plan that holds up to the mountains and to your guests.
+Every cabin is a little different, and the right floor depends on how — and how often — yours gets used. To get a sense of budget first, see our [flooring cost guide](/flooring-guides/flooring-cost-guide/). Then bring your square footage and a few photos to our showroom on US-64 in Murphy, or [request a free quote](/contact/). We'll put together a floor plan that holds up to the mountains and to your guests.

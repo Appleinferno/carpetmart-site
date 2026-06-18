@@ -12,7 +12,7 @@ const description =
 
 const crumbs = [
   { name: 'Home', path: '/' },
-  { name: 'Flooring', path: '/flooring' },
+  { name: 'Flooring', path: '/flooring/' },
 ];
 
 const structuredData = [localBusinessSchema, breadcrumbSchema(crumbs)];
@@ -30,7 +30,7 @@ const structuredData = [localBusinessSchema, breadcrumbSchema(crumbs)];
       <p class="mt-5 text-lg leading-relaxed text-stone-600">
         Carpet, waterproof vinyl plank, hardwood, vinyl flooring and laminate — all in stock, all
         professionally installed, and all backed by {YEARS_IN_BUSINESS}+ years of local know-how.
-        Pick a floor below to learn what it's best for, or just <a href="/contact" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">come see them in person</a>.
+        Pick a floor below to learn what it's best for, or just <a href="/contact/" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">come see them in person</a>.
       </p>
     </div>
 
@@ -39,7 +39,7 @@ const structuredData = [localBusinessSchema, breadcrumbSchema(crumbs)];
         const detail = FLOORING_DETAILS[cat.slug];
         return (
           <a
-            href={`/flooring/${cat.slug}`}
+            href={`/flooring/${cat.slug}/`}
             class="group grid items-stretch overflow-hidden rounded-3xl border border-stone-200 bg-white transition-all hover:border-clay-300 hover:shadow-md md:grid-cols-[0.9fr_1.1fr]"
           >
             <div class:list={['relative min-h-[14rem] overflow-hidden bg-stone-900', i % 2 === 1 && 'md:order-2']}>

@@ -9,7 +9,7 @@ import vercel from '@astrojs/vercel';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://carpetmartfloors.com',
-  trailingSlash: 'never',
+  trailingSlash: 'always',
   integrations: [
     react(),
     sitemap({

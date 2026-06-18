@@ -91,10 +91,10 @@ const structuredData = [
           80 miles of Murphy.
         </p>
         <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-          <a href="/contact" class="inline-flex items-center justify-center rounded-xl bg-clay-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-clay-700 active:scale-[0.98]">
+          <a href="/contact/" class="inline-flex items-center justify-center rounded-xl bg-clay-600 px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-clay-700 active:scale-[0.98]">
             Get a free quote
           </a>
-          <a href="/flooring" class="inline-flex items-center justify-center gap-2 rounded-xl border border-stone-300 bg-white px-6 py-3.5 text-base font-semibold text-stone-800 transition-all hover:border-stone-400 active:scale-[0.98]">
+          <a href="/flooring/" class="inline-flex items-center justify-center gap-2 rounded-xl border border-stone-300 bg-white px-6 py-3.5 text-base font-semibold text-stone-800 transition-all hover:border-stone-400 active:scale-[0.98]">
             Browse flooring
             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0-6-6m6 6-6 6"/></svg>
           </a>
@@ -156,7 +156,7 @@ const structuredData = [
           Every floor for every room in your home
         </h2>
       </div>
-      <a href="/flooring" class="shrink-0 text-sm font-semibold text-clay-700 hover:text-clay-800">
+      <a href="/flooring/" class="shrink-0 text-sm font-semibold text-clay-700 hover:text-clay-800">
         See all flooring &rarr;
       </a>
     </div>
@@ -164,7 +164,7 @@ const structuredData = [
     <div class="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-6">
       {FLOORING_CATEGORIES.map((cat, i) => (
         <a
-          href={`/flooring/${cat.slug}`}
+          href={`/flooring/${cat.slug}/`}
           class:list={[
             'group relative flex flex-col justify-end overflow-hidden rounded-2xl border border-stone-200 bg-stone-900',
             i === 0 ? 'lg:col-span-3 lg:row-span-2 min-h-[18rem]' : 'lg:col-span-3 min-h-[14rem]',
@@ -195,7 +195,7 @@ const structuredData = [
 
   <!-- CABINETS CALLOUT -->
   <section class="container-page pb-4">
-    <a href="/cabinets" class="group block overflow-hidden rounded-3xl border border-stone-200 bg-stone-900">
+    <a href="/cabinets/" class="group block overflow-hidden rounded-3xl border border-stone-200 bg-stone-900">
       <div class="relative grid items-center gap-6 p-8 sm:p-12 lg:grid-cols-[1.5fr_1fr]">
         <div class="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-clay-700/30 blur-3xl"></div>
         <div class="relative">
@@ -241,18 +241,18 @@ const structuredData = [
             screen.
           </p>
           <p>
-            We keep a deep selection of carpet, <a href="/flooring/vinyl-plank" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">waterproof vinyl plank</a>,
-            hardwood, vinyl flooring and laminate in stock — plus <a href="/cabinets" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">kitchen and bath cabinets</a> —
+            We keep a deep selection of carpet, <a href="/flooring/vinyl-plank/" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">waterproof vinyl plank</a>,
+            hardwood, vinyl flooring and laminate in stock — plus <a href="/cabinets/" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">kitchen and bath cabinets</a> —
             so you can see and feel everything before you choose. Then we take it the rest of the way:
             measuring your rooms, ordering the material, and installing it with our own crews. It's the
             kind of full-service, end-to-end care a big-box store simply can't match.
           </p>
         </div>
         <div class="mt-7 flex flex-wrap gap-3">
-          <a href="/about" class="inline-flex items-center justify-center rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-all hover:border-stone-400 active:scale-[0.98]">
+          <a href="/about/" class="inline-flex items-center justify-center rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-all hover:border-stone-400 active:scale-[0.98]">
             Our story
           </a>
-          <a href="/areas-we-serve" class="inline-flex items-center justify-center rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-all hover:border-stone-400 active:scale-[0.98]">
+          <a href="/areas-we-serve/" class="inline-flex items-center justify-center rounded-xl border border-stone-300 bg-white px-5 py-3 text-sm font-semibold text-stone-800 transition-all hover:border-stone-400 active:scale-[0.98]">
             Areas we serve
           </a>
         </div>
@@ -285,7 +285,7 @@ const structuredData = [
         </li>
       ))}
       <li>
-        <a href="/areas-we-serve" class="inline-flex items-center gap-2 rounded-full border border-clay-200 bg-clay-50 px-4 py-2 text-sm font-semibold text-clay-700 transition-colors hover:bg-clay-100">
+        <a href="/areas-we-serve/" class="inline-flex items-center gap-2 rounded-full border border-clay-200 bg-clay-50 px-4 py-2 text-sm font-semibold text-clay-700 transition-colors hover:bg-clay-100">
           View all areas &rarr;
         </a>
       </li>
@@ -324,7 +324,7 @@ const structuredData = [
           Frequently asked questions
         </h2>
         <p class="prose-body mt-4">
-          Still have a question? <a href="/contact" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">Get in touch</a> or call us at
+          Still have a question? <a href="/contact/" class="font-medium text-clay-700 underline decoration-clay-300 underline-offset-2 hover:decoration-clay-600">Get in touch</a> or call us at
           <a href={`tel:${SITE.phoneHref}`} class="font-mono font-medium text-clay-700">{SITE.phone}</a>.
         </p>
       </div>

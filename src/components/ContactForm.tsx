@@ -23,7 +23,7 @@ export default function ContactForm() {
     const formData = new FormData(e.currentTarget);
 
     try {
-      const res = await fetch('/api/contact', { method: 'POST', body: formData });
+      const res = await fetch('/api/contact/', { method: 'POST', body: formData });
       const data = await res.json().catch(() => ({}));
       if (res.ok) {
         setStatus('sent');

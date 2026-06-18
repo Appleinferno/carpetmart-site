@@ -26,11 +26,11 @@ People often price out only the first one and get surprised by the other two. A 
 
 Here's roughly how the materials stack up, from most budget-friendly to most premium:
 
-- **[Laminate](/flooring/laminate):** Among the lowest-cost options. Great wood looks for a small budget, with a tough surface. Higher AC-rated (more durable) lines cost more.
-- **[Carpet](/flooring/carpet):** Wide range. Builder-grade carpet is one of the cheapest ways to cover a big room; premium nylon and pet-proof lines cost more. Don't forget the pad.
-- **[Vinyl plank](/flooring/vinyl-plank):** Mid-range and the best value for many homes. Entry-level planks are affordable; thick rigid-core planks with a heavy wear layer cost more — and are worth it in high-traffic and rental settings.
-- **[Vinyl flooring](/flooring/vinyl-flooring):** One of the most economical floors. Seamless and fully waterproof, it's a budget-friendly pick for bathrooms, laundry rooms, utility spaces and rentals.
-- **[Hardwood](/flooring/hardwood):** The premium option. Costs the most up front, but lasts for decades and can be refinished — and it adds resale value.
+- **[Laminate](/flooring/laminate/):** Among the lowest-cost options. Great wood looks for a small budget, with a tough surface. Higher AC-rated (more durable) lines cost more.
+- **[Carpet](/flooring/carpet/):** Wide range. Builder-grade carpet is one of the cheapest ways to cover a big room; premium nylon and pet-proof lines cost more. Don't forget the pad.
+- **[Vinyl plank](/flooring/vinyl-plank/):** Mid-range and the best value for many homes. Entry-level planks are affordable; thick rigid-core planks with a heavy wear layer cost more — and are worth it in high-traffic and rental settings.
+- **[Vinyl flooring](/flooring/vinyl-flooring/):** One of the most economical floors. Seamless and fully waterproof, it's a budget-friendly pick for bathrooms, laundry rooms, utility spaces and rentals.
+- **[Hardwood](/flooring/hardwood/):** The premium option. Costs the most up front, but lasts for decades and can be refinished — and it adds resale value.
 
 ## Installation costs
 
@@ -68,6 +68,6 @@ The number on the price tag is only part of the picture. At a big-box store, you
 
 ## Ready for a real quote?
 
-Budgeting is a lot easier when you're working with actual numbers. Bring your measurements to our showroom on US-64 in Murphy, or [request a free quote online](/contact). We'll walk you through the options at every price point and help you get the most floor for your money.
+Budgeting is a lot easier when you're working with actual numbers. Bring your measurements to our showroom on US-64 in Murphy, or [request a free quote online](/contact/). We'll walk you through the options at every price point and help you get the most floor for your money.
 
-Still narrowing down the floor itself? Compare [carpet vs. vinyl plank](/flooring-guides/carpet-vs-luxury-vinyl-plank) to see where each belongs, or — if you're outfitting a getaway — read our guide to [the best flooring for mountain cabins and rentals](/flooring-guides/best-flooring-mountain-cabins).
+Still narrowing down the floor itself? Compare [carpet vs. vinyl plank](/flooring-guides/carpet-vs-luxury-vinyl-plank/) to see where each belongs, or — if you're outfitting a getaway — read our guide to [the best flooring for mountain cabins and rentals](/flooring-guides/best-flooring-mountain-cabins/).

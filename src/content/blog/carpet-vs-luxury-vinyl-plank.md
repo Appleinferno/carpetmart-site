@@ -16,13 +16,13 @@ If you want **warmth, softness and quiet**, carpet wins. If you want **waterproo
 
 ## Comfort and warmth
 
-There's a reason bedrooms are almost always carpeted. Carpet is warm underfoot on a cold mountain morning, it's soft for kids playing on the floor, and it absorbs sound so a room feels calm and quiet. A good [carpet](/flooring/carpet) over a quality pad is still the most comfortable floor you can stand and sit on.
+There's a reason bedrooms are almost always carpeted. Carpet is warm underfoot on a cold mountain morning, it's soft for kids playing on the floor, and it absorbs sound so a room feels calm and quiet. A good [carpet](/flooring/carpet/) over a quality pad is still the most comfortable floor you can stand and sit on.
 
 LVP, by contrast, is a hard surface. Newer planks with an attached pad are warmer and quieter than older vinyl, but they'll never match the cozy feel of carpet in a bedroom. Where LVP shines is everywhere that comfort isn't the priority.
 
 ## Water, pets and messes
 
-This is where [vinyl plank](/flooring/vinyl-plank) pulls ahead decisively. LVP is 100% waterproof. Spilled drinks, wet dogs, tracked-in snow, a dishwasher leak — none of it fazes a vinyl floor. You wipe it up and move on.
+This is where [vinyl plank](/flooring/vinyl-plank/) pulls ahead decisively. LVP is 100% waterproof. Spilled drinks, wet dogs, tracked-in snow, a dishwasher leak — none of it fazes a vinyl floor. You wipe it up and move on.
 
 Carpet can be made remarkably pet- and stain-resistant with the right solution-dyed fiber, and we sell a lot of it to families with dogs. But "stain resistant" isn't "waterproof." In a mudroom, a kitchen, a bathroom or a basement that might see moisture, LVP is the smarter choice nearly every time.
 
@@ -34,9 +34,9 @@ Carpet's lifespan depends heavily on the fiber and the traffic. A nylon carpet o
 
 ## Cost
 
-Both come in budget and premium tiers, so they overlap a lot. Entry-level carpet is often the cheapest way to cover a big room. Entry-level LVP costs a little more per square foot but needs almost no maintenance over its life. When customers ask about the cheapest option overall, we usually point them to builder-grade carpet or [laminate](/flooring/laminate); when they ask about the best *value*, LVP usually wins because it lasts and never needs replacing from water damage.
+Both come in budget and premium tiers, so they overlap a lot. Entry-level carpet is often the cheapest way to cover a big room. Entry-level LVP costs a little more per square foot but needs almost no maintenance over its life. When customers ask about the cheapest option overall, we usually point them to builder-grade carpet or [laminate](/flooring/laminate/); when they ask about the best *value*, LVP usually wins because it lasts and never needs replacing from water damage.
 
-For real numbers on your specific rooms, see our [flooring cost guide](/flooring-guides/flooring-cost-guide) or just bring your measurements by.
+For real numbers on your specific rooms, see our [flooring cost guide](/flooring-guides/flooring-cost-guide/) or just bring your measurements by.
 
 ## Resale and renters
 
@@ -47,14 +47,14 @@ If you're fixing up a home to sell or setting up a vacation rental, LVP is almos
 - **Bedrooms:** Carpet, for warmth and quiet.
 - **Living/family room:** Either — carpet for cozy, LVP for low-maintenance and pets.
 - **Kitchen:** LVP. Waterproof and easy to clean.
-- **Bathrooms:** [Vinyl plank](/flooring/vinyl-plank) or [vinyl flooring](/flooring/vinyl-flooring). Never carpet.
+- **Bathrooms:** [Vinyl plank](/flooring/vinyl-plank/) or [vinyl flooring](/flooring/vinyl-flooring/). Never carpet.
 - **Basement:** Vinyl plank. Handles moisture and concrete.
 - **Stairs & hallways:** Tight textured carpet or durable vinyl plank, depending on the look you want.
 - **Mudroom/entry:** Vinyl plank or vinyl flooring.
-- **Cabins & rentals:** Vinyl plank throughout, carpet in bedrooms only — more in our guide to [the best flooring for mountain cabins](/flooring-guides/best-flooring-mountain-cabins).
+- **Cabins & rentals:** Vinyl plank throughout, carpet in bedrooms only — more in our guide to [the best flooring for mountain cabins](/flooring-guides/best-flooring-mountain-cabins/).
 
 ## The bottom line
 
 You don't have to pick just one. The best-floored homes we install use carpet where comfort matters and LVP where durability matters. If you tell us how each room gets used, we'll map out exactly where each floor belongs — and what it'll cost.
 
-Stop by the showroom on US-64 in Murphy, or [request a free quote](/contact) and we'll help you sort it out.
+Stop by the showroom on US-64 in Murphy, or [request a free quote](/contact/) and we'll help you sort it out.

@@ -45,13 +45,13 @@ export const ADDRESS_LINE = `${SITE.address.street}, ${SITE.address.city}, ${SIT
 export const YEARS_IN_BUSINESS = new Date().getFullYear() - SITE.foundedYear;
 
 export const NAV_LINKS = [
-  { href: '/flooring', label: 'Flooring' },
-  { href: '/cabinets', label: 'Cabinets' },
-  { href: '/about', label: 'About' },
-  { href: '/meet-the-team', label: 'Team' },
-  { href: '/areas-we-serve', label: 'Service Area' },
-  { href: '/flooring-guides', label: 'Blog' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/flooring/', label: 'Flooring' },
+  { href: '/cabinets/', label: 'Cabinets' },
+  { href: '/about/', label: 'About' },
+  { href: '/meet-the-team/', label: 'Team' },
+  { href: '/areas-we-serve/', label: 'Service Area' },
+  { href: '/flooring-guides/', label: 'Blog' },
+  { href: '/contact/', label: 'Contact' },
 ] as const;
 
 export type FlooringCategory = {

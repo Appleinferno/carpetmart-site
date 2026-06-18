@@ -4,11 +4,11 @@ export const onRequest = defineMiddleware(async (context, next) => {
   const { pathname } = context.url;
 
   // Protect the admin area (the login page itself stays open).
-  if (pathname.startsWith('/admin') && pathname !== '/admin/login') {
+  if (pathname.startsWith('/admin') && pathname !== '/admin/login/') {
     const token = context.cookies.get('admin_token')?.value;
     const secret = import.meta.env.ADMIN_SECRET;
     if (!secret || token !== secret) {
-      return context.redirect('/admin/login');
+      return context.redirect('/admin/login/');
     }
   }
 

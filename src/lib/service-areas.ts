@@ -269,9 +269,9 @@ export const COUNTIES: County[] = [
 
 // --- Helpers ---------------------------------------------------------------
 
-export const countyPath = (c: Pick<County, 'slug'>) => `/areas-we-serve/${c.slug}`;
+export const countyPath = (c: Pick<County, 'slug'>) => `/areas-we-serve/${c.slug}/`;
 export const townPath = (c: Pick<County, 'slug'>, t: Pick<Town, 'slug'>) =>
-  `/areas-we-serve/${c.slug}/${t.slug}`;
+  `/areas-we-serve/${c.slug}/${t.slug}/`;
 
 export const getCounty = (slug: string) => COUNTIES.find((c) => c.slug === slug);
 

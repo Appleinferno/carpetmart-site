@@ -18,7 +18,7 @@ const [featured, ...rest] = posts;
 
 const crumbs = [
   { name: 'Home', path: '/' },
-  { name: 'Blog', path: '/flooring-guides' },
+  { name: 'Blog', path: '/flooring-guides/' },
 ];
 
 const fmt = (d: Date) => d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
@@ -42,7 +42,7 @@ const structuredData = [localBusinessSchema, breadcrumbSchema(crumbs)];
     </div>
 
     {featured && (
-      <a href={`/flooring-guides/${featured.id}`} class="group mt-12 grid overflow-hidden rounded-3xl border border-stone-200 bg-white transition-all hover:border-clay-300 hover:shadow-md lg:grid-cols-2">
+      <a href={`/flooring-guides/${featured.id}/`} class="group mt-12 grid overflow-hidden rounded-3xl border border-stone-200 bg-white transition-all hover:border-clay-300 hover:shadow-md lg:grid-cols-2">
         <div class="relative min-h-[16rem] overflow-hidden bg-stone-900">
           {featured.data.image && (
             <img src={featured.data.image} alt={featured.data.imageAlt ?? featured.data.title} width="900" height="600" class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-105" />
@@ -66,7 +66,7 @@ const structuredData = [localBusinessSchema, breadcrumbSchema(crumbs)];
     {rest.length > 0 && (
       <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {rest.map((post) => (
-          <a href={`/flooring-guides/${post.id}`} class="group flex flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white transition-all hover:border-clay-300 hover:shadow-sm">
+          <a href={`/flooring-guides/${post.id}/`} class="group flex flex-col overflow-hidden rounded-2xl border border-stone-200 bg-white transition-all hover:border-clay-300 hover:shadow-sm">
             <div class="relative aspect-[16/10] overflow-hidden bg-stone-900">
               {post.data.image && (
                 <img src={post.data.image} alt={post.data.imageAlt ?? post.data.title} width="600" height="375" loading="lazy" class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-105" />

@@ -21,7 +21,7 @@ export default function AdminDashboard() {
   const [state, setState] = useState<State>({ kind: 'loading' });
 
   useEffect(() => {
-    fetch('/api/admin/submissions')
+    fetch('/api/admin/submissions/')
       .then(async (res) => {
         const data = await res.json().catch(() => ({}));
         if (!res.ok) throw new Error(data?.error || 'Request failed');

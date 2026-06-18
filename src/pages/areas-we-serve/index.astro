@@ -12,7 +12,7 @@ const description =
 
 const crumbs = [
   { name: 'Home', path: '/' },
-  { name: 'Areas We Serve', path: '/areas-we-serve' },
+  { name: 'Areas We Serve', path: '/areas-we-serve/' },
 ];
 
 const stateOrder = ['North Carolina', 'Georgia', 'Tennessee'];
@@ -85,7 +85,7 @@ const structuredData = [localBusinessSchema, breadcrumbSchema(crumbs)];
             <h2 class="font-display text-lg font-bold text-stone-900">Visit the showroom</h2>
             <p class="mt-2 text-sm text-stone-600">{ADDRESS_LINE}</p>
             <a href={`tel:${SITE.phoneHref}`} class="mt-1 inline-block font-mono text-sm font-medium text-clay-700">{SITE.phone}</a>
-            <a href="/contact" class="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-clay-600 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-clay-700">
+            <a href="/contact/" class="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-clay-600 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-clay-700">
               Request a quote
             </a>
           </div>

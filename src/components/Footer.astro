@@ -36,10 +36,10 @@ const year = new Date().getFullYear();
       <ul class="mt-4 space-y-2.5 text-sm">
         {FLOORING_CATEGORIES.map((c) => (
           <li>
-            <a href={`/flooring/${c.slug}`} class="hover:text-white">{c.name}</a>
+            <a href={`/flooring/${c.slug}/`} class="hover:text-white">{c.name}</a>
           </li>
         ))}
-        <li><a href="/flooring" class="text-clay-400 hover:text-clay-300">All flooring &rarr;</a></li>
+        <li><a href="/flooring/" class="text-clay-400 hover:text-clay-300">All flooring &rarr;</a></li>
       </ul>
     </div>
 
@@ -64,7 +64,7 @@ const year = new Date().getFullYear();
           </li>
         ))}
       </ul>
-      <a href="/contact" class="mt-5 inline-flex rounded-lg bg-clay-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-clay-700">
+      <a href="/contact/" class="mt-5 inline-flex rounded-lg bg-clay-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-clay-700">
         Request a quote
       </a>
     </div>
@@ -74,9 +74,9 @@ const year = new Date().getFullYear();
     <div class="container-page flex flex-col items-center justify-between gap-4 py-6 text-xs text-stone-500 sm:flex-row">
       <p>&copy; {year} {SITE.name} &middot; {SITE.tagline}. All rights reserved.</p>
       <nav class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2" aria-label="Legal">
-        <a href="/terms" class="hover:text-stone-300">Terms of Service</a>
-        <a href="/cookie-policy" class="hover:text-stone-300">Cookie Policy</a>
-        <a href="/trademark" class="hover:text-stone-300">Trademark</a>
+        <a href="/terms/" class="hover:text-stone-300">Terms of Service</a>
+        <a href="/cookie-policy/" class="hover:text-stone-300">Cookie Policy</a>
+        <a href="/trademark/" class="hover:text-stone-300">Trademark</a>
       </nav>
     </div>
   </div>

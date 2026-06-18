@@ -91,7 +91,7 @@ export default function MobileNav({
 
         <div className="space-y-3 border-t border-stone-200 p-4">
           <a
-            href="/contact"
+            href="/contact/"
             onClick={() => setOpen(false)}
             className="block rounded-xl bg-clay-600 px-4 py-3.5 text-center text-base font-semibold text-white transition-colors hover:bg-clay-700"
           >
