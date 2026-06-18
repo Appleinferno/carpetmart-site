@@ -95,6 +95,18 @@ The Vercel adapter is already configured. Push to a Git repo connected to Vercel
 - [ ] Submit `sitemap-index.xml` in Google Search Console
 - [ ] (Optional) Add an email notification on new submissions
 
+## URL convention — trailing slashes
+
+The site uses `trailingSlash: 'always'` (set in `astro.config.mjs`). Every page lives at a
+slashed URL (e.g. `/flooring/vinyl-plank/`). When adding links or code, keep it consistent:
+
+- **Internal links** must end in `/` (e.g. `href="/cabinets/"`). Non-slash URLs still work —
+  Vercel issues a 308 redirect to the slashed form — but linking straight to the slash avoids
+  the extra hop.
+- **Client-side `fetch()` to API routes must include the slash** — e.g. `fetch('/api/contact/')`.
+  This is the one easy-to-miss spot; a POST to the non-slash path would redirect and can drop the body.
+- Sitemap and canonical tags are slashed automatically.
+
 ## Notes
 
 - **Images** live in `public/images/` (real store photos, AVIF). Swap or add freely.
